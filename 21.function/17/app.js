@@ -5,13 +5,12 @@
 
 let str = 'hschool'
 
-
-const newStr = (str) => {
-    let result = str.split('').map(function (elem, i) {
-        return i % 2 == 0 ? elem.toUpperCase() : elem.toLowerCase()
-    })
+function strNew(str){
+    let strArr = str.split('')
+    let result = strArr.map( (el, i)=> !i % 2 == 0 ? el.toLowerCase() : el.toUpperCase())
     return result.join('')
 }
 
+console.log(strNew(str));
 
-console.log(newStr(str));
+

@@ -1,14 +1,10 @@
-// 1. На входе пустой объект. Выполните следующие шаги:
-// • Добавьте свойство id со значением 1.
-// • Добавьте свойство name со значением "udemy".
-// • Измените значение свойства name на "hschool".
-// • Удалите свойство name из объекта.
+// На входе объект. Необходимо вывести все значения, которые являются числами
 
-const obj = {}
+// Входные: {"a": 1, "b": "2", "c": 3} → Результат: [1,2, 3]
 
-obj.id = 1
-obj.name = 'udemy'
-console.log(obj.name)
-obj.name = 'hschool'
-console.log(obj.name)
-delete obj.name
+const obj = { "a": 1, "b": "2", "c": 3 }
+
+for (let el in obj) {
+    if (!isNaN(obj[el])) console.log(obj[el]);
+
+}

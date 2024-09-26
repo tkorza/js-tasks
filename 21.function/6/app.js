@@ -5,15 +5,23 @@
 let n = 3
 
 let arr = []
-function doArr(arrTest) {
-    for (let i = 0; i < n; i++){
+// function doArr(arrTest) {
+//     for (let i = 0; i < n; i++){
+//         arr.push(prompt())
+//     }
+// }
+
+const doArr = (arrTest) => {
+    for (let i = 0; i < n; i++) {
         arr.push(prompt())
     }
 }
 
-function foundLength(arrTest){
-    return arrTest.length
-}
+// function foundLength(arrTest) {
+//     return arrTest.length
+// }
+
+const foundLength = (arrTest) => arrTest.length
 
 doArr(arr)
 console.log(foundLength(arr));

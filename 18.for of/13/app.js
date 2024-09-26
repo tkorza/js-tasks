@@ -5,14 +5,26 @@
 // Входные: [12, 22, 35, 51, 235, 102] → Результат: [12, 22, 51, 235, 102]
 // Входные: [3, 4, 7, 8, 9] → Результат: []
 
-let n = 10
+// let n = 10
+// let arr = []
+// for (let i = 0; i < n; i++) {
+//     arr.push(prompt())
+// }
+
+// for (let i = 0; i < n; i++) {
+//     if (arr[i][0] == '1' || arr[i][0] == '2' || arr[i][0] == '5'){
+//         console.log(arr[i])
+//     }
+// }
+
+let n = 5
 let arr = []
+
 for (let i = 0; i < n; i++) {
     arr.push(prompt())
 }
 
-for (let i = 0; i < n; i++) {
-    if (arr[i][0] == '1' || arr[i][0] == '2' || arr[i][0] == '5'){
-        console.log(arr[i])
-    }
+for (let el of arr) {
+    if (el[0] =='1'||el[0] =='2'||el[0] =='5') console.log(el);
+    
 }

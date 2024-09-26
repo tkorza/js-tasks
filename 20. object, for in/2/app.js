@@ -2,5 +2,9 @@
 // Входные: {"1": "a", "2": "b", "name": "c"} → Результат: ["1", "2"]
 
 
-const obj = {"1": "a", "2": "b", "name": "c"}
+const obj = { "1": "a", "2": "b", "name": "c" }
+
+for (let el in obj) {
+    if (!isNaN(el)) console.log(el);
+}
 

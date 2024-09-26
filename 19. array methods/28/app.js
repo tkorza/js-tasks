@@ -8,14 +8,15 @@
 let n = prompt()
 let arr = []
 
-for (let i = 0; i < n; i++) {
+for(let i = 0; i<n;i++){
     arr.push(prompt())
 }
-console.log(arr)
-let resultArr = []
-resultArr = arr.map(function(elem){
-    return elem.toUpperCase() 
-})
 
-console.log(resultArr)
+const newArr =[]
+
+arr.forEach(function(el){
+    newArr.push(el.toUpperCase())
+})
+console.log(newArr);
+
 

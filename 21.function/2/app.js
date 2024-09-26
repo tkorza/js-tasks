@@ -5,17 +5,16 @@
 
 function func(str) {
     let test = str.split(' ')
-    let result = ''
+    let result = test.map((el, i) => i % 2 == 0 ? el.toLowerCase() : el.toUpperCase())
+    // for (let i = 0; i < test.length; i++) {
+    //     if (i % 2 == 0) {
+    //         result = result + ' ' + test[i].toLowerCase()
+    //     } else {
+    //         result = result + ' ' + test[i].toUpperCase()
+    //     }
+    // }
 
-    for (let i = 0; i < test.length; i++) {
-        if (i % 2 == 0) {
-            result = result + ' ' + test[i].toLowerCase()
-        } else {
-            result = result + ' ' + test[i].toUpperCase()
-        }
-    }
-
-    return result.trim()
+    return result.join(' ').trim()
 }
 
 let arg = prompt('Введите строку')

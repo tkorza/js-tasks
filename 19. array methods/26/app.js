@@ -4,20 +4,22 @@
 // Входные: ["dog", "cat", "apple"] → Результат: false
 // Входные: ["hschool", "company", "cherry"] → Результат: true
 
-let n = prompt()
-let arr = []
+// let n = prompt()
+let arr = ["apple", "banana", "cherry"]
 
-for (let i = 0; i < n; i++) {
-    arr.push(prompt())
-}
-let result
-result = arr.every(function (elem) {
-    if (elem.length > 3) {
-        return true
-    } else {
-        return false
-    }
-})
+// for (let i = 0; i < n; i++) {
+//     arr.push(prompt())
+// }
+
+const result = arr.every((el)=> el.length > 3)
 
 console.log(result)
+let result2
+arr.forEach(function(el){
+    if(el.length>3) result2= true
+    else result2 = false
+})
+
+console.log(result2);
+
 

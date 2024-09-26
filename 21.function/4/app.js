@@ -3,16 +3,18 @@
 // [“by”, “belarus”, “de”, “ru”, “germany”] -> [“by”, “de”, “ru”]
 let a = ['by', 'belarus', 'de', 'ru', 'germany']
 
-function doName(arr){
-    let result = []
-    for(let el of arr){
-        if(el.length<=2){
-            result.push(el)
-        }
-    }
+// function doName(arr){
+//     let result = []
+//     for(let el of arr){
+//         if(el.length<=2){
+//             result.push(el)
+//         }
+//     }
 
-    return result
-}
+//     return result
+// }
+
+const doName = (arr) => arr.filter((el) => el.length <= 2)
 
 console.log(doName(a));
 

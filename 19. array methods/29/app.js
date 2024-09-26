@@ -12,12 +12,8 @@ let arr = []
 for (let i = 0; i < n; i++) {
     arr.push(+prompt())
 }
-let resultArr = []
-resultArr = arr.filter(function(elem){
-    if(elem > 0){
-        return elem
-    }
-})
 
-console.log(resultArr)
+const newArr = arr.filter((el) => el > 0)
+
+console.log(newArr);
 

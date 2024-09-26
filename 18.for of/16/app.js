@@ -6,8 +6,14 @@
 
 
 let str = prompt()
-let n = prompt()
+let n = prompt('Введите n')
+let newstr = []
+let i = 0
+do {
+    newstr.push(str + ' ')
+    i++
+} while (i < n)
 
-for (let i = 0; i < n; i++) {
-    console.log(str)
-}
+console.log(newstr.join('').trim());
+
+
