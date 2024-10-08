@@ -5,7 +5,8 @@
 
 const changeStr = (str)=>{
     try {
-        newStr = str.exec( /w /gm)
+        let re = ( /w /gm)
+        newStr = re.exec( str)
         return newStr
     }
      catch (error) {
