@@ -6,14 +6,10 @@ const objAbout2 = { яблоко: 'красное', апельсин: 'оран�
 const resultObj = {}
 
 const r = (obj1, obj2) => {
-    const arrValue1 = Object.entries(obj1)
+    const arrValue1 = Object.keys(obj1)
     const arrValue2 = Object.entries(obj2)
 
-    for(let i = )
-
-    // arrValue1.forEach(el => {
-    //     if(arrValue2.hasOwnProperty(el)) resultObj.push(el)
-    // })
+    if(len)
 }
 
 console.log(resultObj);
