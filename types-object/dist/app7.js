@@ -1,10 +1,12 @@
 // 7. На входе 5 значений. Все эти значения пользователь вводит с клавиатуры и
 // заполняет массив. Необходимо создать массив только из чисел. 
-let arrNumb = [];
-let value;
+let startArr = [];
 for (let i = 0; i < 5; i++) {
-    value = +prompt();
-    // if (typeof (value) == 'number') arrNumb.push(value)
-    console.log(value + ' ' + typeof (value));
+    startArr.push(prompt());
 }
-// console.log(arrNumb);
+console.log(startArr);
+let resArrNumber = startArr.filter((el) => {
+    if (!isNaN(+el))
+        return true;
+});
+console.log(resArrNumber);
